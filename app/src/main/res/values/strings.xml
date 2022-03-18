@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sample Localization</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="change_language">Change Language</string>
+    <string name="myself">Myself</string>
+    <string name="about_miself">I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</string>
+    <string name="about_myself">About Myself</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="bd_details">The riverine country of Bangladesh (“Land of the Bengals”) is one of the most densely populated countries in the world, and its people are predominantly Muslim. As the eastern portion of the historical region of Bengal, the area once formed, along with what is now the Indian state of West Bengal, the province of Bengal in British India. With the partition of India in 1947, it became the Pakistani province of East Bengal (later renamed East Pakistan), one of five provinces of Pakistan, separated from the other four by 1,100 miles (1,800 km) of Indian territory. In 1971 it became the independent country of Bangladesh, with its capital at Dhaka.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
