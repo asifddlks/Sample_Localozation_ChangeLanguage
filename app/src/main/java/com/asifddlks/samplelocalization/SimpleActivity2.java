@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.changelanguage.R;
+import com.asifddlks.samplelocalization.R;
 
 public class SimpleActivity2 extends AppCompatActivity {
 

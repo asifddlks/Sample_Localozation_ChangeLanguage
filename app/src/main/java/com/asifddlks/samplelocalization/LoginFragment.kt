@@ -8,16 +8,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.changelanguage.R
-import kotlinx.android.synthetic.main.fragment_login.*
+import com.asifddlks.samplelocalization.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
+
+    private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_login, container, false)
+
+        binding = FragmentLoginBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
 
@@ -27,15 +30,15 @@ class LoginFragment : Fragment() {
     }
 
     private fun initListener() {
-        buttonChangeLanguage.setOnClickListener {
+        binding.buttonChangeLanguage.setOnClickListener {
             showChangeLang()
         }
 
-        aboutMyselfButton.setOnClickListener {
+        binding.aboutMyselfButton.setOnClickListener {
             findNavController().navigate(R.id.detailsFragment)
         }
 
-        buttonNextActivity.setOnClickListener {
+        binding.buttonNextActivity.setOnClickListener {
             startActivity(Intent(requireActivity(), SimpleActivity2::class.java))
         }
     }
@@ -48,13 +51,13 @@ class LoginFragment : Fragment() {
         builder.setTitle("Change Language")
         builder.setSingleChoiceItems(langItem, -1) { dialog, which ->
             if (which == 0) {
-                Utils.changeLanguage("ur", context)
+                Utils.changeLanguage(requireContext(), "ur")
             } else if (which == 1) {
-                Utils.changeLanguage("hi", context)
+                Utils.changeLanguage(requireContext(), "hi")
             } else if (which == 2) {
-                Utils.changeLanguage("bn", context)
+                Utils.changeLanguage(requireContext(), "bn")
             } else if (which == 3) {
-                Utils.changeLanguage("en", context)
+                Utils.changeLanguage(requireContext(), "en")
             }
             refresh()
             dialog.dismiss()

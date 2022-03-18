@@ -2,7 +2,7 @@ package com.asifddlks.samplelocalization
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.changelanguage.R
+import com.asifddlks.samplelocalization.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
         // Set Language at beginning
         // Load from SharedPreference
-        Utils.changeLanguage(AppPrefs(this).language, this)
+        Utils.changeLanguage(this, AppPrefs(this).language)
 
         setContentView(R.layout.activity_main)
 

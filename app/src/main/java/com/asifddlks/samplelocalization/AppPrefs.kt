@@ -1,26 +1,15 @@
-package com.asifddlks.samplelocalization;
+package com.asifddlks.samplelocalization
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Context
+import android.content.SharedPreferences
 
-
-public class AppPrefs {
-
-    private SharedPreferences appSharedPrefs;
-    private SharedPreferences.Editor prefsEditor;
-
-    public AppPrefs(Context context) {
-        this.appSharedPrefs = context.getSharedPreferences("Settings", Context.MODE_PRIVATE);
-        this.prefsEditor = appSharedPrefs.edit();
-    }
-
-
-    public void setLanguage(String language){
-        prefsEditor.putString("Language",language).apply();
-    }
-
-    public String getLanguage(){
-        return appSharedPrefs.getString("Language", "en");
-    }
+class AppPrefs(context: Context) {
+    private val appSharedPrefs: SharedPreferences = context.getSharedPreferences("Settings", Context.MODE_PRIVATE)
+    private val prefsEditor: SharedPreferences.Editor = appSharedPrefs.edit()
+    var language: String?
+        get() = appSharedPrefs.getString("Language", "en")
+        set(language) {
+            prefsEditor.putString("Language", language).apply()
+        }
 
 }

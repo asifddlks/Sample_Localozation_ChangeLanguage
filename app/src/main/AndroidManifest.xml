@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChangeLanguage">
-        <activity android:name="com.asifddlks.samplelocalization.SimpleActivity2"></activity>
-        <activity android:name="com.asifddlks.samplelocalization.MainActivity">
+        <activity android:name="com.asifddlks.samplelocalization.SimpleActivity2" />
+        <activity
+            android:name="com.asifddlks.samplelocalization.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
